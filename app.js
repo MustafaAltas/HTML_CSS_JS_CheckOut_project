@@ -2,6 +2,7 @@ let artıEksi = document.querySelectorAll(".container-div-div");
 let miktar = document.querySelectorAll(".miktar");
 
 
+
 let miktarArtış;
 let miktarAzalış;
 let backBag = document.querySelector(".backbag");
@@ -38,3 +39,5 @@ for (let i = 0; i < artıEksi.length; i++) {
     }
   });
 }
+
+
