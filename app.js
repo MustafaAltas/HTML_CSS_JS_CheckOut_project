@@ -1,6 +1,8 @@
 let artıEksi = document.querySelectorAll(".container-div-div");
 let miktar = document.querySelectorAll(".miktar");
 
+
+
 let miktarArtış;
 let miktarAzalış;
 let backBag = document.querySelector(".backbag");
@@ -26,6 +28,10 @@ for (let i = 0; i < artıEksi.length; i++) {
         .innerHTML--;
       e.target.parentElement.parentElement.querySelector(".p-total").innerHTML = (parseFloat(e.target.parentElement.parentElement.querySelector(".p-total").innerHTML) - parseFloat(e.target.parentElement.parentElement.querySelector(".container-div-span-orange").innerHTML)).toFixed(2);
 
+      if (e.target.parentElement.parentElement.querySelector(".p-total").innerHTML <e.target.parentElement.parentElement.querySelector(".container-div-span-orange").innerHTML ) {
+        e.target.parentElement.parentElement.querySelector(".p-total").innerHTML = e.target.parentElement.parentElement.querySelector(".container-div-span-orange").innerHTML;
+      }
+
 
       if (miktarAzalış == 1) {
         e.target.parentElement.querySelector(".miktar").innerText = 1;
@@ -33,3 +39,5 @@ for (let i = 0; i < artıEksi.length; i++) {
     }
   });
 }
+
+
