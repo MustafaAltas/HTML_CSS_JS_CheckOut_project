@@ -2,10 +2,16 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body {
     background-color: bisque;
+    background-image: url(./img/pngwing.com.png);
+
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
     font-family: 'EB Garamond', serif;
 }
 
