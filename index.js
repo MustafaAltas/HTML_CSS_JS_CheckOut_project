@@ -11,9 +11,15 @@ let shipping = 15.0;
 let total = 188.91;
 let miktarartış;
 let miktarazalış;
+
+let miktar = 1 ;
+
+
+
+
 btnArtış.forEach((event) => {
   event.addEventListener("click", (e) => {
-
+    miktar++;
     miktarartış = event.parentElement.querySelector(".miktar").innerHTML++;
     event.parentElement.parentElement.querySelector(".p-total").innerHTML =
       parseFloat(
@@ -49,7 +55,8 @@ btnArtış.forEach((event) => {
 
 btnAzalış.forEach((event) => {
   event.addEventListener("click", () => {
-
+    miktar--;
+    console.log(miktar);
     miktarazalış = event.parentElement.querySelector(".miktar").innerHTML--;
     
     event.parentElement.parentElement.querySelector(".p-total").innerHTML =
@@ -91,11 +98,7 @@ btnAzalış.forEach((event) => {
 
 remove.forEach((event) => {
   event.addEventListener("click", () => {
-    event.parentElement.querySelector(".miktar").innerHTML = 1;
-    event.parentElement.querySelector(".p-total").innerHTML =
-      event.parentElement.querySelector(".container-div-span-orange").innerHTML;
+    window.location.reload(false);
 
-    document.getElementById("container-div2-div-subtotal").innerHTML -=
-      event.parentElement.querySelector(".container-div-span-orange").innerHTML;
   });
 });
