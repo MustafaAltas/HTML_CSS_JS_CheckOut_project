@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fontawesome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=Bowlby+One+SC&family=Cairo:wght@300&family=Changa:wght@200&family=EB+Garamond&family=Geo&family=Indie+Flower&family=Lato:wght@100;400&family=Lobster+Two&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@500&family=Montserrat:wght@300;400;500&family=Neonderthaw&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Orbitron&family=Permanent+Marker&family=Raleway:ital,wght@1,300&family=Rubik+Beastly&family=Syne+Tactile&family=Teko:wght@300;700&family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-div1">
+        <img src="./img/çanta.png" alt="" />
+        <div class="container-div-div">
+          <h2>Vintage Backbag</h2>
+          <p>
+            $<span class="container-div-span-orange">25.98</span> $<span
+              class="container-div-span-del"
+              >34.99</span
+            >
+          </p>
+          <div class="container-div-div-sayac">
+            <button class="button">-</button>
+            <span class="miktar" id="miktar">1</span>
+            <button class="button">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <button class="remove">Remove</button>
+          <p>Product Total: $<span class="p-total">25.98</span></p>
+        </div>
+      </div>
+      <div class="container-div1">
+        <img src="./img/bot.png" alt="" />
+        <div class="container-div-div">
+          <h2>Levi Shoes</h2>
+          <p>
+            $<span class="container-div-span-orange">25.98</span> $<span
+              class="container-div-span-del"
+              >34.99</span
+            >
+          </p>
+          <div class="container-div-div-sayac">
+            <button class="button" value="-">-</button>
+            <span class="miktar" id="miktar">1</span>
+            <button class="button" value="+">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <button class="remove">Remove</button>
+          <p>Product Total: $<span class="p-total">25.98</span></p>
+        </div>
+      </div>
+      <div class="container-div1">
+        <img src="./img/saat.png" alt="" />
+        <div class="container-div-div">
+          <h2>Antique Clock</h2>
+          <p>
+            $<span class="container-div-span-orange">25.98</span> $<span
+              class="container-div-span-del"
+              >34.99</span
+            >
+          </p>
+          <div class="container-div-div-sayac">
+            <button class="button" value="-">-</button>
+            <span class="miktar" id="miktar">1</span>
+            <button class="button" value="+">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <button class="remove">Remove</button>
+          <p>Product Total: $<span class="p-total">25.98</span></p>
+        </div>
+      </div>
+
+      <div class="container-div2">
+          <div class="container-div2-div">
+              <p>SubTotal</p>
+              <p>$<span class="container-div2-div-subtotal"></span></p>
+          </div>
+          <div class="container-div2-div">
+            <p>Tax(%18)</p>
+            <p>$<span class="container-div2-div-tax"></span></p>
+          </div>
+          <div class="container-div2-div">
+            <p>Shipping</p>
+            <p>$<span class="container-div2-div-shipping"></span></p>
+          </div>
+          <div class="container-div2-div">
+            <p>Total</p>
+            <p>$<span class="container-div2-div-total"></span></p>
+          </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
