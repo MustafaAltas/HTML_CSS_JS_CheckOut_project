@@ -30,6 +30,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 1rem;
+    gap: 20px;
 }
 .container-div-div {
     display: grid;
@@ -57,7 +58,12 @@ img {
 
 
 }
-.button {
+.button-azalış {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+.button-artış {
     width: 20px;
     height: 20px;
     margin: auto;
@@ -65,6 +71,7 @@ img {
 
 .remove {
     width: 25%;
+    height: 1.5rem;
     min-width: 53px;
     background-color: #FC4F4F;
     border-radius: 10px;
